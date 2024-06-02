@@ -1,7 +1,9 @@
 
 use core::num;
-use std::io;
+use std::{io, result};
 fn main() {
+    ("Fahrenheit 37.0 to Celsius {}",convert_temperatures(37.0));
+    loop_example_4();
     loop_example_3();
    loop_example_2();
    loop_example_1();
@@ -95,6 +97,30 @@ fn loop_example_3(){
 
     println!("done");
 
+}
+
+
+fn convert_temperatures(temp : f32 ) -> f32{
+     (temp - 32.0) * 5.0/9.0
+}
+
+fn loop_example_4(){
+
+    let a =[1,2,3,4,5];
+
+    let mut index = 0;
+
+    while index < a.len() {
+        println!("The value is: {}", a[index]);
+        index +=1;
+    }
+}
+
+fn loop_example_5(){
+    let a =[1,2,3,4,5];
+    for element in a {
+        println!("The value is: {}", element);
+    }
 }
 
 fn variable_example(){
