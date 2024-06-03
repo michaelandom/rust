@@ -262,6 +262,7 @@ fn control_flow(num: i32) {
         message = message + "FIZZ";
     }
 
+    
     if num % 3 == 0 {
         message = message + "BUZZ";
     }
