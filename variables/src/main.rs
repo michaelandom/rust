@@ -1,5 +1,4 @@
-use core::num;
-use std::{io, result};
+use std::io;
 fn main() {
     christmas();
     rust_fibonacci(15);
