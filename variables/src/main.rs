@@ -259,7 +259,7 @@ fn control_flow(num: i32) {
     let mut message = String::new();
 
     if num % 5 == 0 {
-        message = message + "FEZZ";
+        message = message + "FIZZ";
     }
 
     if num % 3 == 0 {
